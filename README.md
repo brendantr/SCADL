@@ -42,7 +42,8 @@ We utilize [ASCAD Dataset], a widely recognized dataset in the side-channel anal
 - Compare performance with other machine learning techniques
 
 ## Contributors
-[Your Name]
+Brendan Rodriguez
+Jonathan Williams
 
 ## License
 [Specify the license, e.g., MIT License]
