@@ -1,0 +1,20 @@
+@startuml
+!include <C4/C4.puml>
+
+Person(user, "User")
+System(jupyter, "Jupyter Notebook")
+System(ascad, "ASCAD Dataset")
+
+Rel(user, jupyter, "Interacts with")
+Rel(jupyter, ascad, "Loads from")
+
+Container(jupyter) {
+    Component(loader, "ASCAD Dataset Loader")
+    Component(analysis, "Data Analysis Scripts")
+    Component(visualize, "Data Visualization Tools")
+    
+    Rel(loader, analysis, "Provides data to")
+    Rel(analysis, visualize, "Uses for plotting")
+}
+
+@enduml
